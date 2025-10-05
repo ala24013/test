@@ -1,0 +1,31 @@
+{
+  "name": "PyCBC Development Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": false,
+        "python.formatting.provider": "black",
+        "python.analysis.typeCheckingMode": "basic"
+      }
+    }
+  },
+  
+  "forwardPorts": [8888],
+  
+  "postAttachCommand": "python -c \"import pycbc; print('PyCBC', pycbc.__version__, 'ready!')\"",
+  
+  "remoteUser": "vscode"
+}
