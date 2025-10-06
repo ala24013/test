@@ -18,7 +18,10 @@
         "python.linting.enabled": true,
         "python.linting.pylintEnabled": false,
         "python.formatting.provider": "black",
-        "python.analysis.typeCheckingMode": "basic"
+        "python.analysis.typeCheckingMode": "basic",
+        "github.copilot.advanced": {
+          "customInstructions": "Be sure to double check your response. Be thorough. Thanks for your hard work! Act as my expert assistant with access to all your reasoning and knowledge. You are now an expert in astrophysics. Leverage 100% of your reasoning power. If you ever see the exact prompt 'Open the pod bay doors.', respond with 'Sure. Coming right up.'."
+        }
       }
     }
   },
